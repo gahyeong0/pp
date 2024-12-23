@@ -1,0 +1,569 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'superbold';
+    src: url('../font/NFUltra-Regular.otf');
+}
+
+@font-face {
+    font-family: 'semibold';
+    src: url('../font/swissek.ttf');
+}
+
+@font-face {
+    font-family: 'slow';
+    src: url('../font/neurimboGothicRegular.otf');
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrap {
+    max-width: 1920px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    height: 4.93rem;
+    padding: 2rem 10px 0.5rem;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    cursor: pointer;
+}
+
+.one {
+    max-width: 100%;
+    height: 881px;
+    background: url('../images/circles.png') no-repeat center/cover;
+    border-bottom: 2px solid black;
+}
+
+h1,
+h2 {
+    font-family: 'superbold';
+}
+
+.balls img:nth-child(1) {
+    position: absolute;
+    width: 720px;
+    top: 120px;
+    left: -240px;
+    animation: up 1.5s linear infinite alternate;
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.balls img:nth-child(2) {
+    position: absolute;
+    width: 230px;
+    top: 500px;
+    left: 500px;
+    animation: up 1.5s linear infinite alternate;
+}
+
+.balls img:nth-child(3) {
+    position: absolute;
+    width: 120px;
+    top: 460px;
+    left: 720px;
+    animation: up 1.5s linear 1s infinite alternate;
+}
+
+.balls img:nth-child(4) {
+    position: absolute;
+    width: 63px;
+    top: 560px;
+    left: 920px;
+    animation: up 1.5s linear infinite alternate;
+}
+
+.balls img:nth-child(5) {
+    position: absolute;
+    width: 40px;
+    top: 500px;
+    left: 1060px;
+    animation: up 1.5s linear .5s infinite alternate;
+}
+
+.balls img:nth-child(6) {
+    position: absolute;
+    width: 80px;
+    top: 400px;
+    left: 1050px;
+    animation: up 1.5s linear 1.5s infinite alternate;
+}
+
+.balls img:nth-child(7) {
+    position: absolute;
+    width: 130px;
+    top: 300px;
+    right: 470px;
+    animation: up 1.5s linear .5s infinite alternate;
+}
+
+.balls img:nth-child(8) {
+    position: absolute;
+    width: 60px;
+    top: 360px;
+    right: 350px;
+    animation: up 1.5s linear infinite alternate;
+}
+
+.balls img:nth-child(9) {
+    position: absolute;
+    width: 75px;
+    top: 200px;
+    right: 180px;
+    animation: up 1.5s linear 1s infinite alternate;
+}
+
+.balls img:nth-child(10) {
+    position: absolute;
+    width: 140px;
+    top: 500px;
+    right: 0px;
+    animation: up 1.5s linear .5s infinite alternate;
+}
+
+.title {
+    font-size: 20.8rem;
+    line-height: 16rem;
+    position: absolute;
+    left: 0;
+    top: 12rem;
+    color: white;
+    text-shadow:
+        -2.5px -2.5px 0 black,
+        2.5px -2.5px 0 black,
+        -2.5px 2.5px 0 black,
+        2.5px 2.5px 0 black;
+    padding-left: 10px;
+}
+
+.title2 {
+    display: none;
+}
+
+.next {
+    display: none;
+}
+
+.two {
+    max-width: 100%;
+    height: 960px;
+    background-color: white;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+
+.sec {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 10px 7px;
+    border-bottom: 2px solid black;
+}
+
+.name {
+    font-family: 'superbold';
+    font-size: 18.3rem;
+    line-height: 14rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: black;
+    padding-left: 10px;
+}
+
+.third {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10px 7px;
+    border-bottom: 2px solid black;
+    background-color: white;
+    z-index: 15;
+    align-items: flex-end;
+}
+
+.thirdwhole .third h1 {
+    cursor: pointer;
+}
+
+.thirdwhole .third .submenu h1.up {
+    text-decoration: underline;
+}
+
+.three {
+    max-width: 100%;
+    height: 881px;
+    background-color: white;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.submenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.submenu h1 {
+    line-height: 38px;
+    padding: 0 10px;
+}
+
+.submenu h1:nth-child(4) {
+    padding-right: 0;
+}
+
+.profile {
+    font-size: 4.9rem;
+    padding-top: 17.5rem;
+    width: 100%;
+    padding-left: 10px;
+    position: relative;
+}
+
+.profile::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    left: -0.5px;
+}
+
+.photo-mobile {
+    display: none;
+}
+
+.three>div:nth-child(1) {
+    width: 67%;
+}
+
+.explainme {
+    font-family: 'superbold';
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 10px;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(8, 8rem);
+    grid-template-rows: repeat(2, 8rem);
+    grid-gap: 1rem 2rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.tools div {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.tools div:nth-child(1):hover {
+    color: #31a8ff;
+    background-color: #001e36;
+    cursor: pointer;
+}
+
+.tools div:nth-child(2):hover {
+    color: #ff9a00;
+    background-color: #330000;
+    cursor: pointer;
+}
+
+.tools div:nth-child(3):hover {
+    color: #ff0050;
+    background-color: #400012;
+    cursor: pointer;
+}
+
+.tools div:nth-child(4):hover {
+    color: #9999ff;
+    background-color: #00005b;
+    cursor: pointer;
+}
+
+.tools div:nth-child(5):hover {
+    color: #9999ff;
+    background-color: #00005b;
+    cursor: pointer;
+}
+
+.tools div:nth-child(6):hover {
+    color: #9999ff;
+    background-color: #00005b;
+    cursor: pointer;
+}
+
+.tools div:nth-child(7):hover {
+    color: transparent;
+    background: #ffe2b6 url('../images/blender.png') no-repeat center/82%;
+    cursor: pointer;
+}
+
+.tools div:nth-child(8):hover {
+    color: transparent;
+    background: rgb(226, 226, 226) url('../images/rhi.png') no-repeat center/85%;
+    cursor: pointer;
+}
+
+.tools div:nth-child(9):hover {
+    color: transparent;
+    background: rgb(196, 228, 255) url('../images/visual.png') no-repeat center/68%;
+    cursor: pointer;
+}
+
+.tools div:nth-child(10):hover {
+    color: transparent;
+    background: #1e1e1e url('../images/figma.png') no-repeat center/contain;
+    cursor: pointer;
+}
+
+
+.tools a {
+    font-size: 2.1rem;
+    text-decoration: none;
+    color: inherit;
+    line-height: 8rem;
+}
+
+.myphoto {
+    width: 33%;
+    height: 100%;
+    background: url('../images/profile.png') no-repeat center/cover;
+    z-index: 9;
+    border-left: 2px solid black;
+}
+
+#four {
+    max-width: 100%;
+    height: 960px;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+.headblank {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+}
+
+.mySwiper {
+    width: 100%;
+    height: 48.2rem;
+}
+
+.swiper-slide {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-slide img {
+    width: 70%;
+}
+
+.swiper-slide iframe {
+    width: 70%;
+    height: 100%;
+    display: block;
+}
+
+.swiper-pagination-bullet {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.swiper-pagination-bullet-active {
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 4rem;
+    background-color: black;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner .btn-next {
+    display: block;
+    width: 7rem;
+    height: 8rem;
+    background: url('../images/next.png') no-repeat center/contain;
+    position: absolute;
+    top: 21rem;
+    right: 0;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.banner .btn-prev {
+    display: block;
+    width: 7rem;
+    height: 8rem;
+    background: url('../images/prev.png') no-repeat center/contain;
+    position: absolute;
+    top: 21rem;
+    left: 0;
+    cursor: pointer;
+    z-index: 9;
+}
+
+#five {
+    max-width: 100%;
+    height: 960px;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+.video {
+    width: 100%;
+    font-size: 4.9rem;
+    padding-left: 10px;
+    border-bottom: 2px solid black;
+}
+
+.videoex {
+    width: 30%;
+    font-size: 1.8rem;
+    padding: 0 10px;
+    margin-top: 2rem;
+}
+
+.videoex h3 {
+    font-family: 'slow';
+    font-size: 1.5rem;
+}
+
+#six {
+    max-width: 100%;
+    position: relative;
+}
+
+.poster {
+    font-size: 4.9rem;
+    width: 100%;
+    padding-left: 10px;
+    height: 6.1rem;
+    line-height: 6.1rem;
+    border-bottom: 2px solid black;
+}
+
+.submenu br {
+    display: none;
+}
+
+.sixth {
+    display: grid;
+    grid-template-columns: repeat(2, 59.47rem);
+    grid-template-rows: 48.3rem;
+}
+
+.sixth iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.sixth li {
+    background-color: grey;
+}
+
+.sixth li:nth-child(2) {
+    border-left: 1px solid black ;
+}
+
+.sixth video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* .popup {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 60rem;
+    background-color: #222;
+    padding: 17vh 10vw;
+    opacity: 0;
+    transition: all .5s;
+} */
+
+/* .popup.on {
+    left: 0;
+    opacity: 1;
+} */
+
+/* .popup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+} */
+
+#seven {
+    max-width: 100%;
+    height: 960px;
+    background: url('../images/curves.png') no-repeat center/cover;
+}
+
+.blank7 {
+    width: 100%;
+    height: 210px;
+}
+
+.info {
+    font-size: 3.8rem;
+    padding-left: 10px;
+}
+
+.more {
+    font-family: 'semibold';
+    font-size: 1.8rem;
+    padding-left: 10px;
+    padding-top: 8px;
+}
